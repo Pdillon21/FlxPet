@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/contextual_menu_az_arrange"
+        android:title="Arrange from A to Z" />
+    <item android:id="@+id/contextual_menu_za_arrange"
+        android:title="Arrange from Z to A" />
+
+</menu>

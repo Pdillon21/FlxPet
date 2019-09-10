@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    tools:context=".view.Fragment_pet_details">
+
+    <TextView
+        android:paddingVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingHorizontal="10dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@id/fragment_pet_details_imageview"
+        app:layout_constraintBottom_toBottomOf="@id/fragment_pet_details_imageview"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_margin="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/whtebackground"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fragment_pet_details_imageview"
+        android:layout_margin="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/noimagefound"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/fragment_pet_details_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:paddingVertical="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingHorizontal="10dp"
+        android:text="Pet Name"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@id/fragment_pet_details_imageview"
+        app:layout_constraintTop_toTopOf="@id/fragment_pet_details_imageview"
+        app:layout_constraintBottom_toBottomOf="@id/fragment_pet_details_imageview"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/title_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingHorizontal="10dp"
+        android:text="Id"
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/fragment_pet_details_name"
+        app:layout_constraintTop_toBottomOf="@id/fragment_pet_details_name" />
+
+
+    <TextView
+        android:id="@+id/fragment_pet_details_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:text="21312412314"
+        android:textColor="#000"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/title_id"
+        app:layout_constraintRight_toLeftOf="@id/fragment_pet_details_status_icon"
+        app:layout_constraintLeft_toRightOf="@id/title_id"
+
+        app:layout_constraintTop_toTopOf="@id/title_id" />
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/fragment_pet_details_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:text="status"
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_pet_details_name" />
+
+
+    <ImageView
+        android:id="@+id/fragment_pet_details_status_icon"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/circle_green"
+        app:layout_constraintBottom_toBottomOf="@id/fragment_pet_details_status"
+        app:layout_constraintRight_toLeftOf="@id/fragment_pet_details_status"
+        app:layout_constraintTop_toTopOf="@id/fragment_pet_details_status" />
+
+    <TextView
+        android:id="@+id/title_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="start"
+        android:paddingHorizontal="10dp"
+        android:text="Tags"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/fragment_pet_details_imageview" />
+
+    <TextView
+        android:id="@+id/fragment_pet_details_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingHorizontal="10dp"
+        android:text="tags tags tags"
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_tag" />
+
+    <TextView
+        android:id="@+id/title_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="start"
+        android:text="Category"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/fragment_pet_details_tags"
+
+
+        />
+
+    <TextView
+        android:id="@+id/fragment_pet_details_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:text="Category"
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/title_category"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

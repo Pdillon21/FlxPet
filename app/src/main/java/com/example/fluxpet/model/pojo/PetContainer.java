@@ -1,6 +1,7 @@
-package com.example.fluxpet;
+package com.example.fluxpet.pojo;
 
-import com.google.gson.annotations.SerializedName;
+
+import com.example.fluxpet.pojo.Pet;
 
 import java.util.List;
 
@@ -11,5 +12,9 @@ public class PetContainer {
 
     public List<Pet> getPets() {
         return pets;
+    }
+
+    public void setPets(List<Pet> pets) {
+        this.pets = pets;
     }
 }
