@@ -1,7 +1,7 @@
-package com.example.fluxpet.pojo;
+package com.example.fluxpet.model.pojo;
 
 
-import com.example.fluxpet.pojo.Pet;
+
 
 import java.util.List;
 

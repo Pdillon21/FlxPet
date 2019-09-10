@@ -1,8 +1,20 @@
-package com.example.fluxpet;
+package com.example.fluxpet.controller;
+
+
+import com.example.fluxpet.model.DAO.PetDAO;
+import com.example.fluxpet.model.pojo.Pet;
+import com.example.fluxpet.util.ResultListener;
 
 import java.util.List;
 
 public class PetController {
+
+
+    public PetController (){
+
+
+    }
+
 
     public void getAllAvailablePets (final ResultListener<List<Pet>> listener){
         PetDAO petDAO = new PetDAO();

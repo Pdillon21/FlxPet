@@ -1,13 +1,14 @@
-package com.example.fluxpet;
+package com.example.fluxpet.model;
 
-import com.example.fluxpet.pojo.Pet;
+
+import com.example.fluxpet.model.pojo.Pet;
+import com.example.fluxpet.util.PetHelper;
 
 import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
-import retrofit2.http.Query;
 
 public interface PetService {
     @GET (PetHelper.AVAILABLE_PET_ENDPOINT)

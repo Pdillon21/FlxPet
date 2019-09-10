@@ -1,11 +1,12 @@
-package com.example.fluxpet.DAO;
+package com.example.fluxpet.model.DAO;
 
 
-import com.example.fluxpet.ResultListener;
+
 import com.example.fluxpet.model.MyRetrofit;
 import com.example.fluxpet.model.PetService;
-import com.example.fluxpet.pojo.Pet;
+import com.example.fluxpet.model.pojo.Pet;
 import com.example.fluxpet.util.PetHelper;
+import com.example.fluxpet.util.ResultListener;
 
 import java.util.List;
 
@@ -15,11 +16,13 @@ import retrofit2.Response;
 
 public class PetDAO extends MyRetrofit {
     private PetService service;
+    private RequestFailListener requestFailListener;
 
 
     public PetDAO() {
         super(PetHelper.BASE_URL);
         service = retrofit.create(PetService.class);
+
     }
 
 
@@ -53,9 +56,15 @@ public class PetDAO extends MyRetrofit {
 
             @Override
             public void onFailure(Call<Pet> call, Throwable t) {
-                System.out.printf("fallo pedido individual");
+
+
 
             }
         });
+    }
+
+    public interface RequestFailListener {
+        public void notifyMainForToast (String s);
+
     }
 }

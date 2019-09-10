@@ -1,4 +1,4 @@
-package com.example.fluxpet;
+package com.example.fluxpet.model;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;

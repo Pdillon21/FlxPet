@@ -1,4 +1,4 @@
-package com.example.fluxpet.pojo;
+package com.example.fluxpet.model.pojo;
 
 import java.io.Serializable;
 

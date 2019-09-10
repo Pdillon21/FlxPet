@@ -1,9 +1,12 @@
-package com.example.fluxpet.pojo;
+package com.example.fluxpet.model.pojo;
+
+
 
 
 
 import java.io.Serializable;
 import java.util.List;
+
 
 public class Pet implements Serializable {
     private long id;
